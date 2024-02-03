@@ -182,6 +182,8 @@ public class Runigram {
 		Color [][] blendImage = new Color[image1.length][image1[0].length];
 		for (int i = 0 ; i < image1.length ; i++){
 			for (int j = 0 ; j < image1[0].length ; j++){
+				// #feedback - creating the newColor variable is redundant, you can do everything in one line -
+				// blendImage[i][j] = blend(image1[i][j], image2[i][j], alpha);
 				Color newColor = blend(image1[i][j], image2[i][j], alpha);
 				blendImage[i][j] = newColor;
 			}
